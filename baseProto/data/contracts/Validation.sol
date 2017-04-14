@@ -5,7 +5,7 @@ contract Validation{
     bytes20 private ripemd160Base;
     
 
-    function getCode(address _addr) returns (bytes o_code,uint o_code_size) {
+    function getCode(address _addr) constant returns (bytes o_code,uint o_code_size) {
         assembly {
             // retrieve the size of the code, this needs assembly
             let size := extcodesize(_addr)
@@ -34,24 +34,9 @@ contract Validation{
     }
 
 
-/*
-    function validar( address _addrVerif) returns (uint code)
-    {
-        //comparate
-         var (xCodeVerf, bLengthVerf)=getCode(_addrVerif);
-         if(bLengthVerf<=0)
-         {
-             return 404;
-         }
-         
-        bytes32 sha3Verf= sha3(xCodeVerf); //returns (bytes32)
-        bytes20 ripemd160Verf=ripemd160(xCodeVerf);// returns (bytes20):
-
-    }
-*/
 
 
-    function validarlog( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
+    function getCodeInfo( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
     {
         //comparate
          var (xCodeVerf, bLengthVerf)=getCode(_addrVerif);
@@ -68,7 +53,7 @@ contract Validation{
     }
 
 
-    function comparatelog( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
+    function comparate( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
     {
         //comparate
          var (xCodeVerf, bLengthVerf)=getCode(_addrVerif);
