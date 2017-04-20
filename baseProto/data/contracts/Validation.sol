@@ -38,7 +38,7 @@ contract Validation{
 
     function getCodeInfo( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
     {
-        //comparate
+        //compare
          var (xCodeVerf, bLengthVerf)=getCode(_addrVerif);
          if(bLengthVerf<=0)
          {
@@ -53,9 +53,9 @@ contract Validation{
     }
 
 
-    function comparate( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
+    function compare( address _addrVerif) constant returns (uint code,bytes32 sha3Verf,bytes20 ripemd160Verf)
     {
-        //comparate
+        //compare
          var (xCodeVerf, bLengthVerf)=getCode(_addrVerif);
          if(bLengthVerf<=0)
          {
