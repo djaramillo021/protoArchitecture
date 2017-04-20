@@ -1,5 +1,5 @@
-# protoArchitecture
-What you need
+# Proto Architecture
+# What you need?
 + you need to execute a node geth on (private, testnet,or production)
 
 In folder "/baseProto/data/" ,you execute 
