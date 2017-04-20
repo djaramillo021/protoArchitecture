@@ -35,7 +35,7 @@ The file appCreateValidator.js creates smart contract "Validation", the ouput is
 
 
 
-The file appFunctionValidator.js compares addresses using SHA3 and RIPEMD160.It is necessary you put address to compare in:
+The file appFunctionValidator.js compares the addresses using SHA3 and RIPEMD160.It is necessary you put address to compare in:
 
 ```
 var addr_A="an address smart contract A";
