@@ -31,7 +31,7 @@ The ouput is an address smart contract "B".
 
 
 
-The file appCreateValidator.js creates smart contract "Validator", the ouput is the address smart contract "Validator".
+The file appCreateValidator.js creates smart contract "Validation", the ouput is the address smart contract "Validation".
 
 
 
@@ -42,6 +42,6 @@ var addr_A="an address smart contract A";
 var addr_B="an address smart contract B";
 var addr_A1="an address smart contract A";
 var addr_B1="an address smart contract B";
-var addr_Validator="an address smart contract addr_Validator";
+var addr_Validator="an address smart contract Validation";
 ```
 
