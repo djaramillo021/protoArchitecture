@@ -97,24 +97,24 @@ console.log(getData) // '0x25434534534'
 
 
 // call constant function
-var comparateA = contractInstance.comparate(addr_A);
-console.log("comparate addr_A")
+var compareA = contractInstance.compare(addr_A);
+console.log("compare addr_A")
 console.log(addr_A)
-console.log(comparateA) // '0x25434534534'
+console.log(compareA) // '0x25434534534'
 
 // call constant function
-var comparateA1 = contractInstance.comparate(addr_A1);
-console.log("comparate addr_A1")
+var compareA1 = contractInstance.compare(addr_A1);
+console.log("compare addr_A1")
 console.log(addr_A1)
-console.log(comparateA1) // '0x25434534534'
+console.log(compareA1) // '0x25434534534'
 
 
 
 // call constant function
-var comparateB = contractInstance.comparate(addr_B);
-console.log("comparate addr_B")
+var compareB = contractInstance.compare(addr_B);
+console.log("compare addr_B")
 console.log(addr_B)
-console.log(comparateB) // '0x25434534534'
+console.log(compareB) // '0x25434534534'
 
 
 
